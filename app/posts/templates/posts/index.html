@@ -1,0 +1,26 @@
+<!--этот файл называется index также, как и модуль главного приложения app, для того, чтобы избежать
+путанницы и система могла определить какую страницу в итоге отрендерить, такие файлы создаются в папке с названием
+blueprint (которое будет зарегистрировано в этом же модуле)-->
+{% extends "base.html" %}
+
+
+{% block title %}
+Blueprint index page
+{% endblock %}
+
+{% block content_title %}
+Blueprint index page
+{% endblock content_title %}
+
+{% block content %}
+    {% if not posts_all %}
+        <p>Пока, что не опубликовано не одного поста. </p><br>
+    {% else %}
+        {% for post in posts_all %}
+            <p>
+                <a href="{{ url_for('posts.post_detail',slug=post.slug) }}">{{ post.title }}</a>
+            </p>
+        {% endfor %}
+    {% endif %}
+    <button type="submit" class="search_button">Добавить пост</button>
+{% endblock content %}

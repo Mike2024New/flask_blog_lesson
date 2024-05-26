@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+
+        {% endblock %} | Flask app
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <ul class="main_menu">
+            <li class="logo_rel_menu"><a href="{{ url_for('index') }}"><p>Flask</p></a></li>
+            <li class="central_rel_menu"><a href="{{ url_for('posts.index') }}"><p>Posts</p></a></li>
+            <li><a href="#"><p>Link</p></a></li>
+        </ul>
+        <div class="search">
+            <form class="search_form">
+                <input type="text" class="search_field" placeholder="search">
+                <button type="submit" class="search_button">Submit</button>
+            </form>
+        </div>
+        <div class="reight_link">
+            <a href="#">Link</a>
+        </div>
+    </header>
+    <div class="container">
+        <h1>
+            {% block content_title %}
+
+            {% endblock content_title %}
+        </h1>
+        <p>
+            {% block content %}
+
+            {% endblock content %}
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.html,body{
+    height: 100%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    height:65px;
+    background-color: #262525;
+}
+
+.header_light{
+    display: flex;
+    height:65px;
+    background-color: #b3b3b3;
+}
+
+/*ПОЛЕ ПОИСКА И КНОПКА (ГРУППА SEARCH)*/
+
+.search{
+    display:flex;
+    flex-grow: 1; /* элемент search будет занимать всё свободное пространство (это придвинет reight_link вправо)*/
+    margin-top: 7px;
+    padding-left: 20px;
+}
+
+.search_field{
+    padding-left: 3px;
+    width: 250px;
+    height: 45px;
+    color: #070a08;
+    font-size: 16px;
+    font-family: monospace;
+    font-weight: 400;
+    border-radius: 8px;
+}
+
+.search_button{
+    margin-left: 2px;
+    width: 80px;
+    height: 49px;
+    font-size: 16px;
+    font-family: monospace;
+    border-radius: 7px;
+}
+
+/*МЕНЮ В ЛЕВОЙ ЧАСТИ ШАПКИ САЙТА*/
+.main_menu{
+    display: flex;
+}
+
+.main_menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.main_menu li{
+    width:60px;
+    padding: 22px;
+    list-style: none;
+    text-align:center;
+    vertical-align: middle;
+    font-size: 16px;
+    font-family: monospace;
+    /*outline: 1px red solid;*/
+}
+
+.main_menu a:hover{
+    color: #b5b0a8;
+}
+
+.central_rel_menu{
+    background-color: #070a08;
+}
+
+.central_rel_menu a{
+    color: #b5b0a8;
+}
+
+.central_rel_menu a:hover{
+    color: white;
+}
+
+
+.logo_rel_menu{
+    margin-top: -2px;
+    margin-left: 10px;
+}
+
+.logo_rel_menu a{
+    font-size: 19px;
+    font-weight: 600;
+}
+
+/*кнопка в правом верхнем углу*/
+.reight_link{
+    /*display: flex;*/
+    padding-right: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.reight_link a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;orange
+    font-family: monospace;
+}
+
+.reight_link a:hover{
+    color: #b5b0a8;
+}
+
+.container{
+    margin: 50px 120px;
+}
+
+.container h1{
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.container p{
+    font-family: monospace;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.container button{
+    margin-top: 10px;
+    background-color:orange;
+}
+
+.container a{
+    font-family: monospace;
+    font-weight: 100;
+    font-size: 18px;
+    text-decoration: none;
+    color: #b5b0a8;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
