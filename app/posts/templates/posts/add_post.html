@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}
+Add post
+{% endblock %}
+
+{% block content_title %}
+Добавление поста
+{% endblock content_title %}
+
+{% block content %}
+<form action="{{ url_for('posts.create_post') }}" method="post">
+    <label>Имя поста:</label><input type="text" name="title" value="" required>
+    <label>Контент поста:</label><textarea name="body" cols="30" rows="10"></textarea>
+    <button type="submit">Отправить</button>
+</form>
+<div class="btn_url">
+    <a href="{{ url_for('posts.index') }}"><p>Вернуться к постам</p></a>
+</div>
+{% endblock content %}

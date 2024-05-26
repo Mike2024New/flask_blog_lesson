@@ -10,4 +10,7 @@
 {% endblock content_title %}
 {% block content %}
 <p>{{ post.body }}</p>
+<div class="btn_url">
+    <a href="{{ url_for('posts.index') }}"><p>Вернуться к постам</p></a>
+</div>
 {% endblock content %}

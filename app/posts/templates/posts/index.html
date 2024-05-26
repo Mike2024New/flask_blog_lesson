@@ -14,7 +14,7 @@ Blueprint index page
 
 {% block content %}
     {% if not posts_all %}
-        <p>Пока, что не опубликовано не одного поста. </p><br>
+        <p>Пока, что не опубликовано не одного поста.</p><br>
     {% else %}
         {% for post in posts_all %}
             <p>
@@ -22,5 +22,7 @@ Blueprint index page
             </p>
         {% endfor %}
     {% endif %}
-    <button type="submit" class="search_button">Добавить пост</button>
+    <div class="btn_url">
+        <a href="{{ url_for('posts.create_post') }}">Добавить пост</a>
+    </div>
 {% endblock content %}

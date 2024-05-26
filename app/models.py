@@ -26,3 +26,8 @@ class Post(db.Model):
 
     def __repr__(self):
         return f'<Post id>: {self.id},title:{self.title}>'
+
+
+def add_post(data):
+    db.session.add(data)
+    db.session.commit()

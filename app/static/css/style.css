@@ -54,6 +54,10 @@ header{
     border-radius: 7px;
 }
 
+.search_button:hover{
+    color: #b5b0a8;
+}
+
 /*МЕНЮ В ЛЕВОЙ ЧАСТИ ШАПКИ САЙТА*/
 .main_menu{
     display: flex;
@@ -109,6 +113,7 @@ header{
     padding-right: 20px;
     margin-top: 20px;
     justify-content: center;
+    font-family: monospace;
 }
 
 .reight_link a{
@@ -116,7 +121,6 @@ header{
     color: white;
     font-weight: 500;
     font-size: 16px;orange
-    font-family: monospace;
 }
 
 .reight_link a:hover{
@@ -124,6 +128,8 @@ header{
 }
 
 .container{
+    font-family: monospace;
+    font-size: 18px;
     margin: 50px 120px;
 }
 
@@ -135,22 +141,52 @@ header{
 }
 
 .container p{
-    font-family: monospace;
     font-weight: 100;
-    font-size: 18px;
 }
 
-.container button{
-    margin-top: 10px;
-    background-color:orange;
+
+
+.btn_url{
+    display: flex;
+    margin-top: 40px;
 }
 
-.container a{
-    font-family: monospace;
+.btn_url a{
+    background-color: black;
+    padding: 10px 10px;
+    border-radius: 8px;
+    color: white;
+    text-decoration:none;
+}
+
+.btn_url a:hover{
+    color: #b5b0a8;
+}
+
+
+.container p a{ /*ссылки в абзатце*/
     font-weight: 100;
-    font-size: 18px;
     text-decoration: none;
     color: #b5b0a8;
-    margin-top: 20px;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.container form input{
+    font-size: 18px;
     padding: 10px 10px;
+}
+
+.container form textarea{
+    font-size: 18px;
+    padding: 10px 10px;
+}
+
+.container form label{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
